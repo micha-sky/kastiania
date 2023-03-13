@@ -9,6 +9,24 @@ html {
     line-height: 1.4;
 }
 
+div {
+    animation: rotate 256s linear infinite;
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+    transition: opacity .25s linear;
+    will-change: opacity;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 body {
     font-family: "Squealer", sans-serif;
     -webkit-font-smoothing: antialiased;
