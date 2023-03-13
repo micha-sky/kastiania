@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Squealer";
+    src: url("../fonts/squealer.ttf") format('truetype');
+}
+
+html {
+    color: #222;
+    font-size: 2em;
+    line-height: 1.4;
+}
+
+body {
+    font-family: "Squealer", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
