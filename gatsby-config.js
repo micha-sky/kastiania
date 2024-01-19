@@ -12,7 +12,7 @@ module.exports = {
     title: `Kastania Waldmüller`,
     author: {
       name: `Kastania Waldmüller`,
-      summary: `an artist based in Hamburg`,
+      summary: `malt, schreibt Erzählungen und beschäftigt sich damit, wie die Ideen einer Zeit nicht nur wörtlich, sondern auch in Motiv- und Formensprache niedergeschrieben werden. Insbesondere die Frage, wie diese Spuren aufgegriffen oder umgedeutet werden können, spielt in ihrer Arbeit eine zentrale Rolle.`,
     },
     description: `My blog and portfolio.`,
     siteUrl: `https://kastania.xyz/`,

@@ -32,23 +32,12 @@ const Bio = () => {
 
   return (
     <div className="bio">
-      <StaticImage
-        className="bio-avatar"
-        layout="fixed"
-        formats={["auto", "webp", "avif"]}
-        src="../images/profile.jpeg"
-        width={50}
-        height={50}
-        quality={95}
-        alt="Profile picture"
-      />
+      
       {author?.name && (
         <p>
-          I am <strong>{author.name}</strong> {author?.summary || null}
+          <strong>{author.name}</strong> {author?.summary || null}
           {` `}
-          <a href={`https://instagram.com/${social?.instagram || ``}`}>
-            You can  follow me on Instagram
-          </a>
+          
         </p>
       )}
     </div>
