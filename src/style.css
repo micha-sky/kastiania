@@ -329,3 +329,20 @@ a:focus {
     list-style-position: inside;
   }
 }
+
+@font-face {
+  font-family: 'Mattone';
+  src: url('fonts/Mattone-150.woff2') format('woff2'),
+       url('fonts/Mattone-150.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Haas';
+  src: url('fonts/alte-haas-grotesk.regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
