@@ -1,6 +1,6 @@
 import * as React from "react"
-import {useStaticQuery, graphql} from "gatsby"
-import {StaticImage} from "gatsby-plugin-image"
+import { Link } from "gatsby";
+
 
 
 const About = () => {
@@ -8,7 +8,8 @@ const About = () => {
     return (
         <div>
             <h1>About</h1>
-            <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
+            <p>Kastania Waldmüller malt, schreibt Erzählungen und beschäftigt sich damit, wie die Ideen einer Zeit nicht nur wörtlich, sondern auch in Motiv- und Formensprache niedergeschrieben werden. Insbesondere die Frage, wie diese Spuren aufgegriffen oder umgedeutet werden können, spielt in ihrer Arbeit eine zentrale Rolle</p>
+            <Link to="/">Go back to work</Link>
 
         </div>
     )

@@ -6,10 +6,10 @@ import Texts from "./texts";
 const Work = () => {
     return (
         <div className="work">
-            <h1>paintings</h1>
-            <Link to="/paintings">paintings</Link>
+            <h1><Link to="/paintings">paintings</Link></h1>
+            
 
-            <h1>text</h1>
+            <h1><Link to="/texts">texts</Link></h1>
         </div>
     )
 }
