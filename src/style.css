@@ -27,12 +27,11 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: "Mattone", system-ui, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji";
-  --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
-    Times, serif;
+  --fontFamily-sans: "Mattone", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --fontFamily-serif: "Haas", "Merriweather", "Georgia", Cambria,
+    "Times New Roman", Times, serif;
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
@@ -79,6 +78,8 @@ body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
+  display: flex;
+  justify-content: space-between;
 }
 
 footer {
@@ -257,6 +258,10 @@ a:focus {
   margin: 0;
 }
 
+.right {
+  float: right;
+}
+
 .post-list-item {
   margin-bottom: var(--spacing-8);
   margin-top: var(--spacing-8);
@@ -288,7 +293,6 @@ a:focus {
   display: flex;
   margin-bottom: var(--spacing-8);
   font-family: Helvetica Neue, Arial, sans-serif;
-
 }
 
 .bio p {
@@ -332,19 +336,27 @@ a:focus {
   }
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 32rem;
+}
+
+.right {
+  text-align: right;
+}
+
 @font-face {
-  font-family: 'Mattone';
-  src: url('fonts/Mattone-150.woff2') format('woff2'),
-       url('fonts/Mattone-150.woff') format('woff');
+  font-family: "Mattone";
+  src: url("fonts/Mattone-150.woff2") format("woff2"),
+    url("fonts/Mattone-150.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-
-
 @font-face {
-  font-family: 'Haas';
-  src: url('fonts/alte-haas-grotesk.regular.ttf') format('ttf');
+  font-family: "Haas";
+  src: url("fonts/alte-haas-grotesk.regular.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
