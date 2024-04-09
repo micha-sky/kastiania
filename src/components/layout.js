@@ -7,17 +7,14 @@ const Layout = ({ location, title, children }) => {
   let header;
 
   if (isRootPath) {
-    // 2 h1 tags, one on the left and one on the right
     header = (
-      <div className="">
-        <React.Fragment>
-          <h1 className="main-heading">
-            <Link to="/">{title}</Link>
-          </h1>
-          <h1 className="main-heading right">
-            <Link to="/work">Work</Link>
-          </h1>
-        </React.Fragment>
+      <div className="flex justify-between">
+        <h1 className="main-heading">
+          <Link to="/">{title}</Link>
+        </h1>
+        <h1 className="main-heading">
+          <Link to="/work">Work</Link>
+        </h1>
       </div>
     );
   } else {
