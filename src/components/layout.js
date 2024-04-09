@@ -1,32 +1,22 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`;
-  const isRootPath = location.pathname === rootPath;
+const Layout = ({ title, children }) => {
   let header;
 
-  if (isRootPath) {
-    header = (
-      <div className="flex justify-between">
-        <h1 className="main-heading">
-          <Link to="/">{title}</Link>
-        </h1>
-        <h1 className="main-heading">
-          <Link to="/work">Work</Link>
-        </h1>
-      </div>
-    );
-  } else {
-    header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
-    );
-  }
+  header = (
+    <div className="flex justify-between">
+      <h1 className="main-heading">
+        <Link to="/">Kastania Waldmüller</Link>
+      </h1>
+      <h1 className="main-heading">
+        <Link to="/work">Work</Link>
+      </h1>
+    </div>
+  );
 
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
+    <div className="global-wrapper" data-is-root-path={true}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
