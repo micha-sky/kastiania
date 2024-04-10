@@ -5,7 +5,7 @@ const Layout = ({ title, children }) => {
   let header;
 
   header = (
-    <div className="flex justify-between">
+    <div className="flex flex-col sm:flex-row justify-between">
       <h1 className="main-heading">
         <Link to="/">Kastania Waldmüller</Link>
       </h1>
