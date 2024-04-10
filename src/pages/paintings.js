@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import Layout from "../components/layout";
 
 const Paintings = () => {
-  return (s
+  return (
     <Layout>
       <div className="paintings">
         <h1>here will be a collection of my paintings, im working on it</h1>
