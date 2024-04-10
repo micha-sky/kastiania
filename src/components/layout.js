@@ -16,7 +16,10 @@ const Layout = ({ title, children }) => {
   );
 
   return (
-    <div className="global-wrapper" data-is-root-path={true}>
+    <div
+      className="global-wrapper flex-col md:flex-row"
+      data-is-root-path={true}
+    >
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
