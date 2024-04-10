@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import Paintings from "./paintings";
-import Texts from "./texts";
 import Layout from "../components/layout";
 
 const Work = () => {

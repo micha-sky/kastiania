@@ -6,7 +6,7 @@ const Texts = () => {
   return (
     <Layout>
       <div className="texts">
-        <h1>here are some of my texts</h1>
+        <h1>here will be some of the texts i wrote recently</h1>
         <Link to="/work">Go back to work</Link>
       </div>
     </Layout>
