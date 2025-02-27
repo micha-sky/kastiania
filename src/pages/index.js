@@ -14,6 +14,9 @@ const BlogIndex = ({ data, location }) => {
 
       <Bio />
 
+      <h1 className="main-heading right">
+            <Link to="/about">About</Link>
+          </h1>
 
     </Layout>
   )
@@ -26,7 +29,7 @@ export default BlogIndex
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="All posts" />
+export const Head = () => <Seo title="Kastania Waldmüller" />
 
 export const pageQuery = graphql`
   {
